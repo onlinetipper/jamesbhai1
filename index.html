@@ -29,9 +29,8 @@
         }
 
         body {
-            /* Full screen background bina kisi side layer ke */
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://raw.githubusercontent.com/onlinetipper/crickrt-q/bfec7e12dfeba9b4db4e9304c715908e2ae2a5f8/brand.jpg') no-repeat center center fixed;
+            /* Yahan se linear-gradient hata diya gaya hai taaki background clear dikhe */
+            background: url('https://raw.githubusercontent.com/onlinetipper/mkbhai/c6b2692504d27f593580e6d4cb3b7284f8d88588/blackf.jpg') no-repeat center center fixed;
             background-size: cover;
             display: flex;
             align-items: center;
@@ -41,12 +40,14 @@
         }
 
         .main-card {
-            background: rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(10px);
+            /* Card ka background bhi transparent rakha hai taaki piche ka background dikhe */
+            background: rgba(0, 0, 0, 0.6); /* Text ko readable banane ke liye halka sa dark rakha hai */
+            backdrop-filter: blur(8px);
             padding: 30px 20px;
-            width: 100%;
+            width: 90%;
             max-width: 450px;
             border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
         }
 
         .profile-section {
@@ -90,7 +91,7 @@
         .sub-text {
             font-size: 16px;
             font-weight: 500;
-            color: #00ff00; /* Winning Green Color */
+            color: #00ff00; 
         }
 
         .timer-display {
@@ -138,8 +139,7 @@
 
     <div class="main-card">
         <div class="profile-section">
-            <img src="https://raw.githubusercontent.com/onlinetipper/crickrt-q/bfec7e12dfeba9b4db4e9304c715908e2ae2a5f8/brand.jpg" alt="Expert" class="profile-img">
-            
+            <img src="https://raw.githubusercontent.com/onlinetipper/mkbhai/c6b2692504d27f593580e6d4cb3b7284f8d88588/blackf.jpg" alt="Expert" class="profile-img">
             <span class="channel-name">CRICKET PREDICTION KING</span>
         </div>
 
@@ -172,8 +172,7 @@
 
         function join() {
             if (!mainBtn.disabled) {
-                // YAHAN APNA TELEGRAM LINK DALEIN
-                window.location.href = "https://t.me/+3qFJvDLUjvBlYmQ1"; 
+                window.location.href = "https://t.me/+EH6DTNthtcc5N2I1"; 
             }
         }
     </script>
